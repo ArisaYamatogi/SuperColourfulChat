@@ -1,0 +1,15 @@
+name: SuperColourfulChat
+version: 1.0.0
+main: com.supercolourfulchat.SuperColourfulChatPlugin
+api-version: "1.16"
+description: Per-character hex gradient chat with legacy client downgrade.
+softdepend: [ViaVersion, ViaBackwards, ViaRewind, Essentials, EssentialsChat]
+commands:
+  scc:
+    description: Toggle rainbow gradient for your chat messages.
+    usage: /scc
+    permission: scc.use
+permissions:
+  scc.use:
+    description: Allows toggling SuperColourfulChat gradient.
+    default: true
