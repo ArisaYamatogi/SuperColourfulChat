@@ -40,16 +40,10 @@ public final class SuperColourfulChatPlugin extends JavaPlugin implements Listen
         if (getServer().getPluginManager().getPlugin("Essentials") != null) {
             try {
                 getServer().getPluginManager().registerEvents(new PrivateMessageListener(this, sccCommand, viaBridge), this);
-                getLogger().info("Essentials private message gradient hook registered.");
             } catch (Throwable t) {
                 getLogger().warning("Failed to hook Essentials private messages: " + t);
             }
-        } else {
-            getLogger().info("Essentials not found; private message gradient disabled.");
         }
-        getLogger().info("ViaVersion bridge " + (viaBridge.isAvailable()
-                ? "active (clients below 1.16 receive legacy single color)."
-                : "inactive (all clients treated as 1.16+)."));
     }
 
     @Override
@@ -73,7 +67,6 @@ public final class SuperColourfulChatPlugin extends JavaPlugin implements Listen
             }
             org.bukkit.command.Command existing = commandMap.getCommand("scc");
             if (existing == null || existing == ours) {
-                getLogger().info("/scc command owner at enable: SuperColourfulChat");
                 return;
             }
             String owner = existing instanceof PluginCommand
@@ -156,9 +149,8 @@ public final class SuperColourfulChatPlugin extends JavaPlugin implements Listen
                     .newInstance(sccCommand, viaBridge);
             getServer().getPluginManager().registerEvents(listener, this);
             legacyListener.setModernActive(true);
-            getLogger().info("Modern AsyncChatEvent gradient hook registered.");
         } catch (Throwable t) {
-            getLogger().info("Modern chat event unavailable; using legacy chat pipeline.");
+            // 非 Paper 服务端无 AsyncChatEvent：静默回退到 legacy 聊天管线。
         }
     }
 }

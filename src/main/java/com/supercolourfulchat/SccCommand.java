@@ -35,17 +35,12 @@ public final class SccCommand implements CommandExecutor {
         }
         Player player = (Player) sender;
         UUID id = player.getUniqueId();
-        boolean nowEnabled;
         if (enabled.remove(id)) {
-            nowEnabled = false;
             player.sendMessage("§7炫彩聊天已关闭。");
         } else {
             enabled.add(id);
-            nowEnabled = true;
             player.sendMessage("§a炫彩聊天已开启，你发送的消息将使用随机渐变色。");
         }
-        org.bukkit.Bukkit.getLogger().info("[SuperColourfulChat] " + player.getName() + " (" + id + ") toggled "
-                + (nowEnabled ? "ON" : "OFF") + " via /" + label);
         return true;
     }
 

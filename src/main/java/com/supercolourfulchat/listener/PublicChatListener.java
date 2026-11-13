@@ -38,10 +38,6 @@ public final class PublicChatListener implements Listener {
         if (modernActive && !redispatched) {
             return;
         }
-        if (redispatched) {
-            org.bukkit.Bukkit.getLogger().info("[SuperColourfulChat][debug] " + sender.getName()
-                    + ": processing re-dispatched legacy chat event after modern event was cancelled");
-        }
         if (!toggles.isEnabled(sender.getUniqueId()) || !sender.hasPermission("scc.use")) {
             return;
         }
