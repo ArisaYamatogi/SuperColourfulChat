@@ -1,0 +1,7 @@
+src/main/java/com/supercolourfulchat/SccCommand.java
+src/main/java/com/supercolourfulchat/SuperColourfulChatPlugin.java
+src/main/java/com/supercolourfulchat/compat/ViaVersionBridge.java
+src/main/java/com/supercolourfulchat/listener/ModernChatListener.java
+src/main/java/com/supercolourfulchat/listener/PrivateMessageListener.java
+src/main/java/com/supercolourfulchat/listener/PublicChatListener.java
+src/main/java/com/supercolourfulchat/util/GradientUtil.java

@@ -1,0 +1,456 @@
+[
+  {
+    "t": 1794502811262,
+    "kind": "system_chat",
+    "data": {
+      "content": {
+        "type": "compound",
+        "value": {
+          "extra": {
+            "type": "list",
+            "value": {
+              "type": "compound",
+              "value": [
+                {
+                  "italic": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "underlined": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "bold": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "color": {
+                    "type": "string",
+                    "value": "green"
+                  },
+                  "obfuscated": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "strikethrough": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "炫彩聊天已开启，你发送的消息将使用随机渐变色。"
+                  }
+                }
+              ]
+            }
+          },
+          "text": {
+            "type": "string",
+            "value": ""
+          }
+        }
+      },
+      "isActionBar": false
+    }
+  },
+  {
+    "t": 1794502812788,
+    "kind": "system_chat",
+    "data": {
+      "content": {
+        "type": "compound",
+        "value": {
+          "with": {
+            "type": "list",
+            "value": {
+              "type": "compound",
+              "value": [
+                {
+                  "extra": {
+                    "type": "list",
+                    "value": {
+                      "type": "compound",
+                      "value": [
+                        {
+                          "": {
+                            "type": "string",
+                            "value": "TestBot"
+                          }
+                        },
+                        {
+                          "": {
+                            "type": "string",
+                            "value": "> "
+                          }
+                        },
+                        {
+                          "extra": {
+                            "type": "list",
+                            "value": {
+                              "type": "compound",
+                              "value": [
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "#70F46C"
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": "h"
+                                  }
+                                },
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "#77F172"
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": "e"
+                                  }
+                                },
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "#7DEF77"
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": "l"
+                                  }
+                                },
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "#84EC7D"
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": "l"
+                                  }
+                                },
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "#8BE983"
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": "o"
+                                  }
+                                },
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "#91E688"
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": " "
+                                  }
+                                },
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "#98E48E"
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": "g"
+                                  }
+                                },
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "#9FE194"
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": "r"
+                                  }
+                                },
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "#A5DE99"
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": "a"
+                                  }
+                                },
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "#ACDB9F"
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": "d"
+                                  }
+                                },
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "#B3D9A5"
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": "i"
+                                  }
+                                },
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "#BAD6AB"
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": "e"
+                                  }
+                                },
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "#C0D3B0"
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": "n"
+                                  }
+                                },
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "#C7D0B6"
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": "t"
+                                  }
+                                },
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "#CECEBC"
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": " "
+                                  }
+                                },
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "#D4CBC1"
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": "1"
+                                  }
+                                },
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "#DBC8C7"
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": "2"
+                                  }
+                                },
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "#E2C5CD"
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": "3"
+                                  }
+                                },
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "#E8C3D2"
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": "4"
+                                  }
+                                },
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "#EFC0D8"
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": "5"
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          "text": {
+                            "type": "string",
+                            "value": ""
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "<"
+                  }
+                }
+              ]
+            }
+          },
+          "translate": {
+            "type": "string",
+            "value": "%s"
+          }
+        }
+      },
+      "isActionBar": false
+    }
+  },
+  {
+    "t": 1794502814776,
+    "kind": "system_chat",
+    "data": {
+      "content": {
+        "type": "compound",
+        "value": {
+          "with": {
+            "type": "list",
+            "value": {
+              "type": "compound",
+              "value": [
+                {
+                  "extra": {
+                    "type": "list",
+                    "value": {
+                      "type": "string",
+                      "value": [
+                        "TestBot",
+                        "> ",
+                        "&a manual green test"
+                      ]
+                    }
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "<"
+                  }
+                }
+              ]
+            }
+          },
+          "translate": {
+            "type": "string",
+            "value": "%s"
+          }
+        }
+      },
+      "isActionBar": false
+    }
+  },
+  {
+    "t": 1794502816782,
+    "kind": "system_chat",
+    "data": {
+      "content": {
+        "type": "compound",
+        "value": {
+          "extra": {
+            "type": "list",
+            "value": {
+              "type": "compound",
+              "value": [
+                {
+                  "italic": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "underlined": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "bold": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "color": {
+                    "type": "string",
+                    "value": "gray"
+                  },
+                  "obfuscated": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "strikethrough": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "炫彩聊天已关闭。"
+                  }
+                }
+              ]
+            }
+          },
+          "text": {
+            "type": "string",
+            "value": ""
+          }
+        }
+      },
+      "isActionBar": false
+    }
+  },
+  {
+    "t": 1794502818288,
+    "kind": "system_chat",
+    "data": {
+      "content": {
+        "type": "compound",
+        "value": {
+          "with": {
+            "type": "list",
+            "value": {
+              "type": "compound",
+              "value": [
+                {
+                  "extra": {
+                    "type": "list",
+                    "value": {
+                      "type": "string",
+                      "value": [
+                        "TestBot",
+                        "> ",
+                        "plain after off"
+                      ]
+                    }
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "<"
+                  }
+                }
+              ]
+            }
+          },
+          "translate": {
+            "type": "string",
+            "value": "%s"
+          }
+        }
+      },
+      "isActionBar": false
+    }
+  }
+]

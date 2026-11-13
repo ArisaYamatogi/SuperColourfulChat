@@ -78,9 +78,10 @@ fi
 log "== upper bound dependencies (latest readable paper-api / EssentialsX 2.22.0) =="
 fetch "$CENTRAL/net/kyori/adventure-api/$ADVENTURE_VER/adventure-api-$ADVENTURE_VER.jar" "libs/adventure-api-$ADVENTURE_VER.jar"
 fetch "$CENTRAL/net/kyori/adventure-key/$ADVENTURE_VER/adventure-key-$ADVENTURE_VER.jar" "libs/adventure-key-$ADVENTURE_VER.jar"
+fetch "$CENTRAL/net/kyori/adventure-text-serializer-legacy/$ADVENTURE_VER/adventure-text-serializer-legacy-$ADVENTURE_VER.jar" "libs/adventure-text-serializer-legacy-$ADVENTURE_VER.jar"
 fetch "$CENTRAL/net/kyori/examination-api/$EXAMINATION_VER/examination-api-$EXAMINATION_VER.jar" "libs/examination-api-$EXAMINATION_VER.jar"
 fetch "$CENTRAL/net/md-5/bungeecord-chat/$BUNGEE_UPPER_VER/bungeecord-chat-$BUNGEE_UPPER_VER.jar" "libs/bungeecord-chat-$BUNGEE_UPPER_VER.jar"
-UPPER_SIG_CP="libs/adventure-api-$ADVENTURE_VER.jar;libs/adventure-key-$ADVENTURE_VER.jar;libs/examination-api-$EXAMINATION_VER.jar;libs/bungeecord-chat-$BUNGEE_UPPER_VER.jar"
+UPPER_SIG_CP="libs/adventure-api-$ADVENTURE_VER.jar;libs/adventure-key-$ADVENTURE_VER.jar;libs/adventure-text-serializer-legacy-$ADVENTURE_VER.jar;libs/examination-api-$EXAMINATION_VER.jar;libs/bungeecord-chat-$BUNGEE_UPPER_VER.jar"
 
 # javap tolerates newer class files, javac does not: probe-compile a reference to org.bukkit.Server.
 paper_readable() { # paper_readable <jar>
@@ -130,7 +131,8 @@ fi
 log "upper EssentialsX: $ESS_UPPER_JAR"
 
 log "== compile =="
-find src/main/java -name '*.java' | sort > build/sources.txt
+find src/main/java -name '*.java' ! -name 'ModernChatListener.java' | sort > build/sources.txt
+find src/main/java -name '*.java' | sort > build/sources-all.txt
 rm -rf build/classes build/classes-upper
 mkdir -p build/classes build/classes-upper
 
@@ -138,8 +140,12 @@ LOWER_CP="libs/spigot-api-1.16.5-R0.1-SNAPSHOT.jar;libs/bungeecord-chat-1.16-R0.
 "$JAVAC" --release 8 -encoding UTF-8 -cp "$LOWER_CP" -d build/classes @build/sources.txt
 log "lower bound compile OK (--release 8, spigot-api 1.16.5, $ESS_LOWER_JAR)"
 
+# ModernChatListener needs Paper AsyncChatEvent + adventure; compile separately at --release 8 and merge.
+"$JAVAC_UPPER" --release 8 -encoding UTF-8 -cp "$PAPER_JAR;$UPPER_SIG_CP;build/classes" -d build/classes src/main/java/com/supercolourfulchat/listener/ModernChatListener.java
+log "modern listener compile OK (--release 8, $PAPER_JAR)"
+
 UPPER_CP="$PAPER_JAR;$ESS_UPPER_JAR;$UPPER_SIG_CP"
-"$JAVAC_UPPER" -encoding UTF-8 -cp "$UPPER_CP" -d build/classes-upper @build/sources.txt
+"$JAVAC_UPPER" -encoding UTF-8 -cp "$UPPER_CP" -d build/classes-upper @build/sources-all.txt
 log "upper bound compile OK (JDK21 default, $PAPER_JAR, $ESS_UPPER_JAR)"
 
 "$JAR" --create --file build/SuperColourfulChat.jar -C build/classes . -C src/main/resources .

@@ -5,7 +5,10 @@ import java.util.regex.Pattern;
 
 public final class GradientUtil {
 
-    private static final Pattern MANUAL_CODES = Pattern.compile("[&§](?:[0-9a-fk-orA-FK-OR]|x|#[0-9a-fA-F]{6})|<#[0-9a-fA-F]{6}>");
+    // 裸 §x（后随不足 6 个 §hex）是 EssentialsChat 剥色残留，不算手动码；完整 §x hex 才算。
+    private static final Pattern MANUAL_CODES = Pattern.compile("[&§](?:[0-9a-fk-orA-FK-OR]|x(?=(?:§[0-9a-fA-F]){6})|#[0-9a-fA-F]{6})|<#[0-9a-fA-F]{6}>");
+    private static final Pattern DANGLING_HEX = Pattern.compile("§x(?!(?:§[0-9a-fA-F]){6})");
+    private static final Pattern HEX_SEQUENCE = Pattern.compile("§x(?:§[0-9a-fA-F]){6}");
     private static final char[] HEX = "0123456789abcdef".toCharArray();
     private static final int[] LEGACY_RGB = {
             0x000000, 0x0000AA, 0x00AA00, 0x00AAAA,
@@ -21,6 +24,95 @@ public final class GradientUtil {
 
     public static boolean hasManualCodes(String message) {
         return message != null && MANUAL_CODES.matcher(message).find();
+    }
+
+    public static String stripDanglingHex(String message) {
+        return message == null ? "" : DANGLING_HEX.matcher(message).replaceAll("");
+    }
+
+    public static boolean containsHex(String message) {
+        return message != null && HEX_SEQUENCE.matcher(message).find();
+    }
+
+    public static String plainProjection(String legacy) {
+        if (legacy == null || legacy.isEmpty()) {
+            return "";
+        }
+        StringBuilder plain = new StringBuilder(legacy.length());
+        buildPlainIndex(legacy, plain);
+        return plain.toString();
+    }
+
+    // 只检查渲染输出中"消息正文"部分是否已有完整 §x hex，避免前缀/名字里的颜色造成误判。
+    public static boolean renderedMessageHasHex(String rendered, String plainMessage) {
+        if (rendered == null || rendered.isEmpty()) {
+            return false;
+        }
+        if (plainMessage == null || plainMessage.isEmpty()) {
+            return containsHex(rendered);
+        }
+        StringBuilder plain = new StringBuilder(rendered.length());
+        int[] map = buildPlainIndex(rendered, plain);
+        int pos = plain.lastIndexOf(plainMessage);
+        if (pos < 0) {
+            return containsHex(rendered);
+        }
+        return containsHex(rendered.substring(map[pos]));
+    }
+
+    // 把渲染输出中的消息正文替换为新渐变，保留格式前缀/后缀；找不到正文时返回 null。
+    public static String recolorMessagePortion(String rendered, String plainMessage, int startRgb, int endRgb) {
+        if (rendered == null || plainMessage == null || plainMessage.isEmpty()) {
+            return null;
+        }
+        StringBuilder plain = new StringBuilder(rendered.length());
+        int[] map = buildPlainIndex(rendered, plain);
+        int pos = plain.lastIndexOf(plainMessage);
+        if (pos < 0) {
+            return null;
+        }
+        int from = map[pos];
+        int to = map[pos + plainMessage.length()];
+        return rendered.substring(0, from) + gradient(plainMessage, startRgb, endRgb) + rendered.substring(to);
+    }
+
+    // 逐字符扫描 legacy 串：完整 §x hex 跳 14 字符，其余 §c 跳 2 字符；map[k] = 第 k 个纯文本字符在 legacy 串中的起点。
+    private static int[] buildPlainIndex(String legacy, StringBuilder plainOut) {
+        int[] map = new int[legacy.length() + 1];
+        int i = 0;
+        while (i < legacy.length()) {
+            char c = legacy.charAt(i);
+            if (c == '§' && i + 1 < legacy.length()) {
+                if (legacy.charAt(i + 1) == 'x' && isFullHexAt(legacy, i)) {
+                    i += 14;
+                } else {
+                    i += 2;
+                }
+                continue;
+            }
+            map[plainOut.length()] = i;
+            plainOut.append(c);
+            i++;
+        }
+        map[plainOut.length()] = legacy.length();
+        return map;
+    }
+
+    private static boolean isFullHexAt(String s, int i) {
+        if (i + 13 >= s.length()) {
+            return false;
+        }
+        for (int k = 0; k < 6; k++) {
+            int base = i + 2 + k * 2;
+            if (s.charAt(base) != '§') {
+                return false;
+            }
+            char h = s.charAt(base + 1);
+            if (!((h >= '0' && h <= '9') || (h >= 'a' && h <= 'f') || (h >= 'A' && h <= 'F'))) {
+                return false;
+            }
+        }
+        return true;
     }
 
     public static int randomColor() {
@@ -44,7 +136,7 @@ public final class GradientUtil {
         if (message == null || message.isEmpty()) {
             return message == null ? "" : message;
         }
-        int n = message.length();
+        int n = message.codePointCount(0, message.length());
         int denom = Math.max(1, n - 1);
         int sr = (startRgb >> 16) & 0xFF;
         int sg = (startRgb >> 8) & 0xFF;
@@ -52,14 +144,18 @@ public final class GradientUtil {
         int dr = ((endRgb >> 16) & 0xFF) - sr;
         int dg = ((endRgb >> 8) & 0xFF) - sg;
         int db = (endRgb & 0xFF) - sb;
-        StringBuilder out = new StringBuilder(n * 15);
-        for (int i = 0; i < n; i++) {
+        StringBuilder out = new StringBuilder(message.length() * 15);
+        int i = 0;
+        for (int idx = 0; idx < message.length(); ) {
+            int codePoint = message.codePointAt(idx);
             double t = (double) i / denom;
             int r = sr + (int) Math.round(dr * t);
             int g = sg + (int) Math.round(dg * t);
             int b = sb + (int) Math.round(db * t);
             appendHexColor(out, (r << 16) | (g << 8) | b);
-            out.append(message.charAt(i));
+            out.appendCodePoint(codePoint);
+            idx += Character.charCount(codePoint);
+            i++;
         }
         return out.toString();
     }

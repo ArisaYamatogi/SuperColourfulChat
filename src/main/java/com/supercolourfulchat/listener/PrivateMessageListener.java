@@ -43,11 +43,15 @@ public final class PrivateMessageListener implements Listener {
             return;
         }
         Player senderBase = ((IUser) sender).getBase();
-        if (senderBase == null || !toggles.isEnabled(senderBase.getUniqueId())) {
+        if (senderBase == null || !toggles.isEnabled(senderBase.getUniqueId()) || !senderBase.hasPermission("scc.use")) {
             return;
         }
         String message = event.getMessage();
         if (GradientUtil.hasManualCodes(message)) {
+            return;
+        }
+        message = GradientUtil.stripDanglingHex(message);
+        if (message.isEmpty()) {
             return;
         }
         IMessageRecipient recipient = event.getRecipient();
@@ -153,6 +157,9 @@ public final class PrivateMessageListener implements Listener {
                 displayNames = Boolean.TRUE.equals(result);
             } catch (Throwable ignored) {
             }
+            if (spyExempt(sender) || spyExempt(recipient)) {
+                return;
+            }
             String senderName = nameOf(sender, displayNames);
             String recipientName = nameOf(recipient, displayNames);
             String prefix = translate(muted ? "socialSpyMutedPrefix" : "socialSpyPrefix");
@@ -161,7 +168,7 @@ public final class PrivateMessageListener implements Listener {
                     continue;
                 }
                 Player base = user.getBase();
-                if (base == null || base.hasPermission("essentials.chat.spy.exempt") || !user.isSocialSpyEnabled()) {
+                if (base == null || !user.isSocialSpyEnabled()) {
                     continue;
                 }
                 String message = via.isBelow116(base) ? downgraded : gradient;
@@ -170,6 +177,15 @@ public final class PrivateMessageListener implements Listener {
             }
         } catch (Throwable ignored) {
         }
+    }
+
+    // Essentials 原生语义：发送/接收任一方持 exempt（或为控制台）时整段私聊免 spy。
+    private static boolean spyExempt(IMessageRecipient party) {
+        if (!(party instanceof IUser)) {
+            return true;
+        }
+        Player base = ((IUser) party).getBase();
+        return base == null || base.hasPermission("essentials.chat.spy.exempt");
     }
 
     private static String nameOf(IMessageRecipient recipient, boolean displayNames) {

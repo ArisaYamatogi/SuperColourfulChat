@@ -1,0 +1,878 @@
+[
+  {
+    "t": 1794503055499,
+    "kind": "system_chat",
+    "data": {
+      "content": {
+        "type": "compound",
+        "value": {
+          "extra": {
+            "type": "list",
+            "value": {
+              "type": "compound",
+              "value": [
+                {
+                  "italic": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "underlined": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "bold": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "color": {
+                    "type": "string",
+                    "value": "green"
+                  },
+                  "obfuscated": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "strikethrough": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "炫彩聊天已开启，你发送的消息将使用随机渐变色。"
+                  }
+                }
+              ]
+            }
+          },
+          "text": {
+            "type": "string",
+            "value": ""
+          }
+        }
+      },
+      "isActionBar": false
+    }
+  },
+  {
+    "t": 1794503057022,
+    "kind": "system_chat",
+    "data": {
+      "content": {
+        "type": "compound",
+        "value": {
+          "extra": {
+            "type": "list",
+            "value": {
+              "type": "compound",
+              "value": [
+                {
+                  "": {
+                    "type": "string",
+                    "value": "<TestBot"
+                  }
+                },
+                {
+                  "italic": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "underlined": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "bold": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "obfuscated": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "strikethrough": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "> "
+                  }
+                },
+                {
+                  "italic": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "underlined": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "bold": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "color": {
+                    "type": "string",
+                    "value": "#5BD706"
+                  },
+                  "obfuscated": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "strikethrough": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "h"
+                  }
+                },
+                {
+                  "italic": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "underlined": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "bold": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "color": {
+                    "type": "string",
+                    "value": "#5BD10B"
+                  },
+                  "obfuscated": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "strikethrough": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "e"
+                  }
+                },
+                {
+                  "italic": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "underlined": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "bold": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "color": {
+                    "type": "string",
+                    "value": "#5BCB10"
+                  },
+                  "obfuscated": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "strikethrough": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "l"
+                  }
+                },
+                {
+                  "italic": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "underlined": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "bold": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "color": {
+                    "type": "string",
+                    "value": "#5AC414"
+                  },
+                  "obfuscated": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "strikethrough": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "l"
+                  }
+                },
+                {
+                  "italic": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "underlined": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "bold": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "color": {
+                    "type": "string",
+                    "value": "#5ABE19"
+                  },
+                  "obfuscated": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "strikethrough": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "o"
+                  }
+                },
+                {
+                  "italic": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "underlined": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "bold": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "color": {
+                    "type": "string",
+                    "value": "#5AB81E"
+                  },
+                  "obfuscated": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "strikethrough": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": " "
+                  }
+                },
+                {
+                  "italic": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "underlined": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "bold": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "color": {
+                    "type": "string",
+                    "value": "#5AB223"
+                  },
+                  "obfuscated": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "strikethrough": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "g"
+                  }
+                },
+                {
+                  "italic": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "underlined": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "bold": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "color": {
+                    "type": "string",
+                    "value": "#5AAC28"
+                  },
+                  "obfuscated": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "strikethrough": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "r"
+                  }
+                },
+                {
+                  "italic": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "underlined": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "bold": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "color": {
+                    "type": "string",
+                    "value": "#59A52C"
+                  },
+                  "obfuscated": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "strikethrough": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "a"
+                  }
+                },
+                {
+                  "italic": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "underlined": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "bold": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "color": {
+                    "type": "string",
+                    "value": "#599F31"
+                  },
+                  "obfuscated": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "strikethrough": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "d"
+                  }
+                },
+                {
+                  "italic": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "underlined": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "bold": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "color": {
+                    "type": "string",
+                    "value": "#599936"
+                  },
+                  "obfuscated": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "strikethrough": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "i"
+                  }
+                },
+                {
+                  "italic": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "underlined": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "bold": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "color": {
+                    "type": "string",
+                    "value": "#59933B"
+                  },
+                  "obfuscated": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "strikethrough": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "e"
+                  }
+                },
+                {
+                  "italic": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "underlined": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "bold": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "color": {
+                    "type": "string",
+                    "value": "#588C3F"
+                  },
+                  "obfuscated": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "strikethrough": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "n"
+                  }
+                },
+                {
+                  "italic": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "underlined": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "bold": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "color": {
+                    "type": "string",
+                    "value": "#588644"
+                  },
+                  "obfuscated": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "strikethrough": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "t"
+                  }
+                },
+                {
+                  "italic": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "underlined": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "bold": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "color": {
+                    "type": "string",
+                    "value": "#588049"
+                  },
+                  "obfuscated": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "strikethrough": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": " "
+                  }
+                },
+                {
+                  "italic": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "underlined": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "bold": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "color": {
+                    "type": "string",
+                    "value": "#587A4E"
+                  },
+                  "obfuscated": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "strikethrough": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "1"
+                  }
+                },
+                {
+                  "italic": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "underlined": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "bold": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "color": {
+                    "type": "string",
+                    "value": "#587453"
+                  },
+                  "obfuscated": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "strikethrough": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "2"
+                  }
+                },
+                {
+                  "italic": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "underlined": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "bold": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "color": {
+                    "type": "string",
+                    "value": "#576D57"
+                  },
+                  "obfuscated": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "strikethrough": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "3"
+                  }
+                },
+                {
+                  "italic": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "underlined": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "bold": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "color": {
+                    "type": "string",
+                    "value": "#57675C"
+                  },
+                  "obfuscated": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "strikethrough": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "4"
+                  }
+                },
+                {
+                  "italic": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "underlined": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "bold": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "color": {
+                    "type": "string",
+                    "value": "#576161"
+                  },
+                  "obfuscated": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "strikethrough": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "5"
+                  }
+                }
+              ]
+            }
+          },
+          "text": {
+            "type": "string",
+            "value": ""
+          }
+        }
+      },
+      "isActionBar": false
+    }
+  },
+  {
+    "t": 1794503059008,
+    "kind": "system_chat",
+    "data": {
+      "content": {
+        "type": "compound",
+        "value": {
+          "extra": {
+            "type": "list",
+            "value": {
+              "type": "compound",
+              "value": [
+                {
+                  "": {
+                    "type": "string",
+                    "value": "<TestBot"
+                  }
+                },
+                {
+                  "italic": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "underlined": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "bold": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "obfuscated": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "strikethrough": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "> &a manual green test"
+                  }
+                }
+              ]
+            }
+          },
+          "text": {
+            "type": "string",
+            "value": ""
+          }
+        }
+      },
+      "isActionBar": false
+    }
+  },
+  {
+    "t": 1794503061009,
+    "kind": "system_chat",
+    "data": {
+      "content": {
+        "type": "compound",
+        "value": {
+          "extra": {
+            "type": "list",
+            "value": {
+              "type": "compound",
+              "value": [
+                {
+                  "italic": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "underlined": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "bold": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "color": {
+                    "type": "string",
+                    "value": "gray"
+                  },
+                  "obfuscated": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "strikethrough": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "炫彩聊天已关闭。"
+                  }
+                }
+              ]
+            }
+          },
+          "text": {
+            "type": "string",
+            "value": ""
+          }
+        }
+      },
+      "isActionBar": false
+    }
+  },
+  {
+    "t": 1794503062516,
+    "kind": "system_chat",
+    "data": {
+      "content": {
+        "type": "compound",
+        "value": {
+          "extra": {
+            "type": "list",
+            "value": {
+              "type": "compound",
+              "value": [
+                {
+                  "": {
+                    "type": "string",
+                    "value": "<TestBot"
+                  }
+                },
+                {
+                  "italic": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "underlined": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "bold": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "obfuscated": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "strikethrough": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "> plain after off"
+                  }
+                }
+              ]
+            }
+          },
+          "text": {
+            "type": "string",
+            "value": ""
+          }
+        }
+      },
+      "isActionBar": false
+    }
+  }
+]

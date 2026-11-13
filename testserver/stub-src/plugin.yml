@@ -1,0 +1,4 @@
+name: ColorfulChatStub
+version: 1.0.0
+main: com.sccstub.ColorfulChatStub
+description: Simulates ColorfulChat legacy MONITOR hex injection for SCC testing.

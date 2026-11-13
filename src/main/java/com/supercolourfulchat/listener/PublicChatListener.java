@@ -17,20 +17,40 @@ public final class PublicChatListener implements Listener {
 
     private final SccCommand toggles;
     private final ViaVersionBridge via;
+    private volatile boolean modernActive;
 
     public PublicChatListener(SccCommand toggles, ViaVersionBridge via) {
         this.toggles = toggles;
         this.via = via;
     }
 
+    public void setModernActive(boolean modernActive) {
+        this.modernActive = modernActive;
+    }
+
     @EventHandler(priority = EventPriority.HIGHEST, ignoreCancelled = true)
     public void onAsyncChat(AsyncPlayerChatEvent event) {
         Player sender = event.getPlayer();
-        if (!toggles.isEnabled(sender.getUniqueId())) {
+        String legacyPlain = GradientUtil.plainProjection(GradientUtil.stripDanglingHex(event.getMessage()));
+        boolean redispatched = modernActive
+                && (toggles.isModernInProgress(sender.getUniqueId(), legacyPlain)
+                    || toggles.consumeModernCancelled(sender.getUniqueId(), legacyPlain));
+        if (modernActive && !redispatched) {
+            return;
+        }
+        if (redispatched) {
+            org.bukkit.Bukkit.getLogger().info("[SuperColourfulChat][debug] " + sender.getName()
+                    + ": processing re-dispatched legacy chat event after modern event was cancelled");
+        }
+        if (!toggles.isEnabled(sender.getUniqueId()) || !sender.hasPermission("scc.use")) {
             return;
         }
         String message = event.getMessage();
         if (GradientUtil.hasManualCodes(message)) {
+            return;
+        }
+        message = GradientUtil.stripDanglingHex(message);
+        if (message.isEmpty()) {
             return;
         }
         int start = GradientUtil.randomColor();
@@ -53,7 +73,13 @@ public final class PublicChatListener implements Listener {
         String displayName = sender.getDisplayName();
         for (Player recipient : legacy) {
             recipients.remove(recipient);
-            recipient.sendMessage(String.format(format, displayName, downgraded));
+            String rendered;
+            try {
+                rendered = String.format(format, displayName, downgraded);
+            } catch (Throwable t) {
+                rendered = "<" + displayName + "> " + downgraded;
+            }
+            recipient.sendMessage(rendered);
         }
         event.setMessage(gradient);
     }

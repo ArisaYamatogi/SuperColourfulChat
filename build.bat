@@ -32,18 +32,21 @@ call :ess_lower || exit /b 1
 echo [build] == upper bound dependencies ==
 call :fetch "%CENTRAL%/net/kyori/adventure-api/%ADVENTURE_VER%/adventure-api-%ADVENTURE_VER%.jar" "libs\adventure-api-%ADVENTURE_VER%.jar" || exit /b 1
 call :fetch "%CENTRAL%/net/kyori/adventure-key/%ADVENTURE_VER%/adventure-key-%ADVENTURE_VER%.jar" "libs\adventure-key-%ADVENTURE_VER%.jar" || exit /b 1
+call :fetch "%CENTRAL%/net/kyori/adventure-text-serializer-legacy/%ADVENTURE_VER%/adventure-text-serializer-legacy-%ADVENTURE_VER%.jar" "libs\adventure-text-serializer-legacy-%ADVENTURE_VER%.jar" || exit /b 1
 call :fetch "%CENTRAL%/net/kyori/examination-api/%EXAMINATION_VER%/examination-api-%EXAMINATION_VER%.jar" "libs\examination-api-%EXAMINATION_VER%.jar" || exit /b 1
 call :fetch "%CENTRAL%/net/md-5/bungeecord-chat/%BUNGEE_UPPER_VER%/bungeecord-chat-%BUNGEE_UPPER_VER%.jar" "libs\bungeecord-chat-%BUNGEE_UPPER_VER%.jar" || exit /b 1
-set "UPPER_SIG_CP=libs\adventure-api-%ADVENTURE_VER%.jar;libs\adventure-key-%ADVENTURE_VER%.jar;libs\examination-api-%EXAMINATION_VER%.jar;libs\bungeecord-chat-%BUNGEE_UPPER_VER%.jar"
+set "UPPER_SIG_CP=libs\adventure-api-%ADVENTURE_VER%.jar;libs\adventure-key-%ADVENTURE_VER%.jar;libs\adventure-text-serializer-legacy-%ADVENTURE_VER%.jar;libs\examination-api-%EXAMINATION_VER%.jar;libs\bungeecord-chat-%BUNGEE_UPPER_VER%.jar"
 call :paper_upper || exit /b 1
 call :ess_upper || exit /b 1
 
 echo [build] == compile ==
 if exist build\sources.txt del build\sources.txt
+if exist build\sources-all.txt del build\sources-all.txt
 for /r "src\main\java" %%f in (*.java) do (
     set "P=%%f"
     set "P=!P:\=/!"
-    >>build\sources.txt echo "!P!"
+    >>build\sources-all.txt echo "!P!"
+    if /i not "%%~nxf"=="ModernChatListener.java" >>build\sources.txt echo "!P!"
 )
 if exist build\classes rmdir /s /q build\classes
 if exist build\classes-upper rmdir /s /q build\classes-upper
@@ -55,8 +58,12 @@ set "LOWER_CP=libs\spigot-api-1.16.5-R0.1-SNAPSHOT.jar;libs\bungeecord-chat-1.16
 if errorlevel 1 (echo [build] lower compile FAILED & exit /b 1)
 echo [build] lower bound compile OK
 
+"%JDK_UPPER%\bin\javac.exe" --release 8 -encoding UTF-8 -cp "!PAPER_JAR!;!UPPER_SIG_CP!;build\classes" -d build\classes src\main\java\com\supercolourfulchat\listener\ModernChatListener.java
+if errorlevel 1 (echo [build] modern compile FAILED & exit /b 1)
+echo [build] modern listener compile OK
+
 set "UPPER_CP=!PAPER_JAR!;!ESS_UPPER_JAR!;!UPPER_SIG_CP!"
-"%JDK_UPPER%\bin\javac.exe" -encoding UTF-8 -cp "!UPPER_CP!" -d build\classes-upper @build\sources.txt
+"%JDK_UPPER%\bin\javac.exe" -encoding UTF-8 -cp "!UPPER_CP!" -d build\classes-upper @build\sources-all.txt
 if errorlevel 1 (echo [build] upper compile FAILED & exit /b 1)
 echo [build] upper bound compile OK
 
