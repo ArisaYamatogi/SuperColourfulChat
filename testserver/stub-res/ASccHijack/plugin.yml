@@ -1,9 +1,0 @@
-name: ASccHijack
-version: 1.0.0
-main: com.sccstub.ASccHijack
-api-version: "1.16"
-loadbefore: [SuperColourfulChat]
-commands:
-  scc:
-    description: hijacked
-    usage: /scc
