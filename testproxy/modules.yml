@@ -1,0 +1,8 @@
+version: 3
+modules:
+- bootstrap://cmd_alert
+- bootstrap://cmd_find
+- bootstrap://cmd_list
+- bootstrap://cmd_send
+- bootstrap://cmd_server
+- bootstrap://reconnect_yaml

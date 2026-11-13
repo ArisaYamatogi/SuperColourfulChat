@@ -1,117 +1,123 @@
-[01:08:34] [ServerMain/INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.4+7-LTS; Azul Systems, Inc. Zulu21.36+17-CA) on Windows 11 10.0 (amd64)
-[01:08:34] [ServerMain/INFO]: [bootstrap] Loading Leaves 1.21.8-138-master@9331167 (2025-10-18T16:10:30Z) for Minecraft 1.21.8
-[01:08:34] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
-[01:08:35] [ServerMain/INFO]: [PluginInitializerManager] Initialized 3 plugins
-[01:08:35] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (3):
- - Essentials (2.21.2), EssentialsChat (2.21.2), SuperColourfulChat (1.0.0)
-[01:08:38] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[01:08:38] [ServerMain/INFO]: Found new data pack file/bukkit, loading it automatically
-[01:08:38] [ServerMain/INFO]: Found new data pack paper, loading it automatically
-[01:08:39] [ServerMain/INFO]: No existing world data, creating new world
-[01:08:39] [ServerMain/ERROR]: No key layers in MapLike[{}]
-[01:08:39] [ServerMain/INFO]: Loaded 1407 recipes
-[01:08:39] [ServerMain/INFO]: Loaded 1520 advancements
-[01:08:40] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
-[01:08:40] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 241.5ms
-[01:08:40] [Server thread/INFO]: Starting minecraft server version 1.21.8
-[01:08:40] [Server thread/INFO]: Loading properties
-[01:08:40] [Server thread/INFO]: This server is running Leaves version 1.21.8-138-master@9331167 (2025-10-18T16:10:30Z) (Implementing API version 1.21.8-R0.1-SNAPSHOT)
-[01:08:40] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
-[01:08:40] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[01:08:40] [Server thread/INFO]: Using 4 threads for Netty based IO
-[01:08:41] [Server thread/INFO]: [MoonriseCommon] Leaves is using 4 worker threads, 1 I/O threads
-[01:08:41] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
-[01:08:41] [Server thread/INFO]: Default game type: SURVIVAL
-[01:08:41] [Server thread/INFO]: Generating keypair
-[01:08:41] [Server thread/INFO]: Starting Minecraft server on *:25565
-[01:08:41] [Server thread/INFO]: Using default channel type
-[01:08:41] [Server thread/INFO]: Paper: Using Java compression from Velocity.
-[01:08:41] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
-[01:08:41] [Server thread/INFO]: [Essentials] Loading server plugin Essentials v2.21.2
-[01:08:41] [Server thread/INFO]: [EssentialsChat] Loading server plugin EssentialsChat v2.21.2
-[01:08:41] [Server thread/INFO]: [SuperColourfulChat] Loading server plugin SuperColourfulChat v1.0.0
-[01:08:41] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[01:08:41] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[01:08:41] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[01:08:41] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[01:08:41] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[01:08:41] [Server thread/INFO]: Preparing level "world"
-[01:08:41] [Server thread/ERROR]: No key layers in MapLike[{}]
-[01:08:42] [Server thread/ERROR]: No key layers in MapLike[{}]
-[01:08:43] [Server thread/ERROR]: No key layers in MapLike[{}]
-[01:08:43] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[01:08:43] [Server thread/INFO]: Preparing spawn area: 2%
-[01:08:43] [Server thread/INFO]: Time elapsed: 128 ms
-[01:08:43] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[01:08:43] [Server thread/INFO]: Preparing spawn area: 2%
-[01:08:43] [Server thread/INFO]: Preparing spawn area: 53%
-[01:08:44] [Server thread/INFO]: Time elapsed: 773 ms
-[01:08:44] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[01:08:44] [Server thread/INFO]: Preparing spawn area: 2%
-[01:08:44] [Server thread/INFO]: Time elapsed: 148 ms
-[01:08:44] [Server thread/INFO]: [Essentials] Enabling Essentials v2.21.2
-[01:08:44] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
-[01:08:44] [Server thread/INFO]: [Essentials] No kits found to migrate.
-[01:08:45] [Server thread/INFO]: [Essentials] Selected Legacy Biome Name Provider as the provider for BiomeNameProvider
-[01:08:45] [Server thread/INFO]: [Essentials] Selected 1.20.5+ Banner Data Provider as the provider for BannerDataProvider
-[01:08:45] [Server thread/INFO]: [Essentials] Selected 1.13+ Spawn Egg Provider as the provider for SpawnEggProvider
-[01:08:45] [Server thread/INFO]: [Essentials] Selected 1.14+ Sign Data Provider as the provider for SignDataProvider
-[01:08:45] [Server thread/INFO]: [Essentials] Selected Paper Biome Key Provider as the provider for BiomeKeyProvider
-[01:08:45] [Server thread/INFO]: [Essentials] Selected 1.21+ InventoryView Interface ABI Provider as the provider for InventoryViewProvider
-[01:08:45] [Server thread/INFO]: [Essentials] Selected 1.8.3+ Spawner Item Provider as the provider for SpawnerItemProvider
-[01:08:45] [Server thread/INFO]: [Essentials] Selected Paper Material Tag Provider as the provider for MaterialTagProvider
-[01:08:45] [Server thread/INFO]: [Essentials] Selected Paper Container Provider as the provider for ContainerProvider
-[01:08:45] [Server thread/INFO]: [Essentials] Selected 1.11+ Item Unbreakable Provider as the provider for ItemUnbreakableProvider
-[01:08:45] [Server thread/INFO]: [Essentials] Selected 1.14.4+ Persistent Data Container Provider as the provider for PersistentDataProvider
-[01:08:45] [Server thread/INFO]: [Essentials] Selected 1.12+ Spawner Block Provider as the provider for SpawnerBlockProvider
-[01:08:45] [Server thread/INFO]: [Essentials] Selected Paper Server State Provider as the provider for ServerStateProvider
-[01:08:45] [Server thread/INFO]: [Essentials] Selected 1.12.2+ Player Locale Provider as the provider for PlayerLocaleProvider
-[01:08:45] [Server thread/INFO]: [Essentials] Selected Paper Known Commands Provider as the provider for KnownCommandsProvider
-[01:08:45] [Server thread/INFO]: [Essentials] Selected Paper Serialization Provider as the provider for SerializationProvider
-[01:08:45] [Server thread/INFO]: [Essentials] Selected 1.21.4+ Sync Commands Provider as the provider for SyncCommandsProvider
-[01:08:45] [Server thread/INFO]: [Essentials] Selected Reflection Formatted Command Alias Provider as the provider for FormattedCommandAliasProvider
-[01:08:45] [Server thread/INFO]: [Essentials] Selected 1.20.6+ Potion Meta Provider as the provider for PotionMetaProvider
-[01:08:45] [Server thread/INFO]: [Essentials] Selected 1.17.1+ World Info Provider as the provider for WorldInfoProvider
-[01:08:45] [Server thread/INFO]: [Essentials] Selected Reflection Online Mode Provider as the provider for OnlineModeProvider
-[01:08:45] [Server thread/INFO]: [Essentials] Selected 1.20.4+ Damage Event Provider as the provider for DamageEventProvider
-[01:08:45] [Server thread/INFO]: [Essentials] Selected Paper Tick Count Provider as the provider for TickCountProvider
-[01:08:45] [Server thread/INFO]: [Essentials] Loaded 43880 items from items.json.
-[01:08:45] [Server thread/INFO]: [Essentials] Using locale zh_CN
-[01:08:45] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
-[01:08:45] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
-[01:08:45] [Server thread/INFO]: [Essentials] Using superperms-based permissions.
-[01:08:45] [Server thread/INFO]: [EssentialsChat] Enabling EssentialsChat v2.21.2
-[01:08:45] [Server thread/INFO]: [EssentialsChat] Starting Metrics. Opt-out using the global bStats config.
-[01:08:45] [Server thread/INFO]: [SuperColourfulChat] Enabling SuperColourfulChat v1.0.0
-[01:08:45] [Server thread/INFO]: [SuperColourfulChat] /scc command owner at enable: SuperColourfulChat
-[01:08:45] [Server thread/INFO]: [SuperColourfulChat] Modern AsyncChatEvent gradient hook registered.
-[01:08:45] [Server thread/INFO]: [SuperColourfulChat] Essentials private message gradient hook registered.
-[01:08:45] [Server thread/INFO]: [SuperColourfulChat] ViaVersion bridge inactive (all clients treated as 1.16+).
-[01:08:45] [Server thread/INFO]: [spark] Starting background profiler...
-[01:08:45] [Server thread/INFO]: [spark] The async-profiler engine is not supported for your os/arch (windows11/amd64), so the built-in Java engine will be used instead.
-[01:08:45] [Server thread/INFO]: Done preparing level "world" (3.952s)
-[01:08:45] [Server thread/INFO]: Running delayed init tasks
-[01:08:45] [Server thread/INFO]: [SuperColourfulChat] /scc command owner at enable: SuperColourfulChat
-[01:08:45] [Server thread/INFO]: Done (12.462s)! For help, type "help"
-[01:08:45] [Craft Scheduler Thread - 1 - Essentials/INFO]: [Essentials] 正在获取版本信息...
-[01:08:46] [Craft Scheduler Thread - 1 - Essentials/WARN]: [Essentials] 已有新的EssentialsX版本可供下载：2.22.0。
-[01:08:46] [Craft Scheduler Thread - 1 - Essentials/WARN]: [Essentials] 在此处下载：https://essentialsx.net/downloads.html?branch=stable
-[01:08:47] [User Authenticator #0/INFO]: UUID of player TestBot is 30fecbe1-2271-3418-8553-d3ded0e95f56
-[01:08:47] [Server thread/INFO]: [HorriblePlayerLoginEventHack] You have plugins listening to the PlayerLoginEvent, this will cause re-configuration APIs to be unavailable: [Essentials]
-[01:08:48] [Server thread/INFO]: TestBot joined the game
-[01:08:48] [Server thread/INFO]: TestBot[/127.0.0.1:55991] logged in with entity id 25 at ([world]7.5, -61.0, -0.5)
-[01:08:50] [Server thread/INFO]: TestBot issued server command: /scc
-[01:08:50] [Server thread/INFO]: [SuperColourfulChat] TestBot (30fecbe1-2271-3418-8553-d3ded0e95f56) toggled ON via /scc
-[01:08:51] [Async Chat Thread - #0/INFO]: [SuperColourfulChat][debug] TestBot: HIGH injected gradient start=#586d13 end=#a4ddb4 text=hello gradient 12345
-[01:08:51] [Async Chat Thread - #0/INFO]: [SuperColourfulChat] First gradient injected for TestBot via modern AsyncChatEvent.
-[01:08:51] [Async Chat Thread - #0/INFO]: <TestBot> hello gradient 12345
-[01:08:53] [Async Chat Thread - #0/INFO]: [SuperColourfulChat][debug] TestBot: HIGH skip: manual codes in original input: &a manual green test
-[01:08:53] [Async Chat Thread - #0/INFO]: <TestBot>  manual green test
-[01:08:55] [Server thread/INFO]: TestBot issued server command: /msg TestBot pm gradient check
-[01:08:57] [Server thread/INFO]: TestBot issued server command: /msg TestBot &a pm manual
-[01:08:59] [Server thread/INFO]: TestBot issued server command: /scc
-[01:08:59] [Server thread/INFO]: [SuperColourfulChat] TestBot (30fecbe1-2271-3418-8553-d3ded0e95f56) toggled OFF via /scc
-[01:09:01] [Async Chat Thread - #0/INFO]: [SuperColourfulChat][debug] TestBot: HIGH skip: toggle is OFF (logged once per player)
-[01:09:01] [Async Chat Thread - #0/INFO]: <TestBot> plain after off
-[01:09:03] [Server thread/INFO]: TestBot lost connection: Disconnected
-[01:09:03] [Server thread/INFO]: TestBot left the game
+[10:27:24] [ServerMain/INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.4+7-LTS; Azul Systems, Inc. Zulu21.36+17-CA) on Windows 11 10.0 (amd64)
+[10:27:24] [ServerMain/INFO]: [bootstrap] Loading Leaves 1.21.8-138-master@9331167 (2025-10-18T16:10:30Z) for Minecraft 1.21.8
+[10:27:25] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[10:27:25] [ServerMain/INFO]: [PluginInitializerManager] Initialized 6 plugins
+[10:27:25] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (6):
+ - ColorfulChat (1.0.1-SNAPSHOT), Essentials (2.21.2), EssentialsChat (2.21.2), SuperColourfulChat (1.0.0), ViaBackwards (5.9.1), ViaVersion (5.9.1)
+[10:27:29] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[10:27:29] [ServerMain/INFO]: Found new data pack file/bukkit, loading it automatically
+[10:27:29] [ServerMain/INFO]: Found new data pack paper, loading it automatically
+[10:27:29] [ServerMain/INFO]: No existing world data, creating new world
+[10:27:29] [ServerMain/ERROR]: No key layers in MapLike[{}]
+[10:27:30] [ServerMain/INFO]: Loaded 1407 recipes
+[10:27:30] [ServerMain/INFO]: Loaded 1520 advancements
+[10:27:30] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[10:27:31] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 308.1ms
+[10:27:31] [Server thread/INFO]: Starting minecraft server version 1.21.8
+[10:27:31] [Server thread/INFO]: Loading properties
+[10:27:31] [Server thread/INFO]: This server is running Leaves version 1.21.8-138-master@9331167 (2025-10-18T16:10:30Z) (Implementing API version 1.21.8-R0.1-SNAPSHOT)
+[10:27:31] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[10:27:31] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[10:27:31] [Server thread/INFO]: Using 4 threads for Netty based IO
+[10:27:32] [Server thread/INFO]: [MoonriseCommon] Leaves is using 4 worker threads, 1 I/O threads
+[10:27:32] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[10:27:32] [Server thread/INFO]: Default game type: SURVIVAL
+[10:27:32] [Server thread/INFO]: Generating keypair
+[10:27:32] [Server thread/INFO]: Starting Minecraft server on *:25566
+[10:27:32] [Server thread/INFO]: Using default channel type
+[10:27:32] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[10:27:32] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[10:27:33] [Server thread/WARN]: [org.bukkit.craftbukkit.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[10:27:39] [Server thread/WARN]: Legacy plugin ColorfulChat v1.0.1-SNAPSHOT does not specify an api-version.
+[10:27:39] [Server thread/INFO]: [Essentials] Loading server plugin Essentials v2.21.2
+[10:27:39] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v5.9.1
+[10:27:39] [Server thread/INFO]: [ViaVersion] ViaVersion 5.9.1 is now loaded. Registering protocol transformers and injecting...
+[10:27:40] [Via-Mappingloader-1/INFO]: [ViaVersion] Loading block connection mappings ...
+[10:27:40] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[10:27:40] [Server thread/INFO]: [ViaBackwards] Registering protocols...
+[10:27:40] [Server thread/INFO]: [EssentialsChat] Loading server plugin EssentialsChat v2.21.2
+[10:27:40] [Server thread/INFO]: [ViaBackwards] Loading server plugin ViaBackwards v5.9.1
+[10:27:40] [Server thread/INFO]: [SuperColourfulChat] Loading server plugin SuperColourfulChat v1.0.0
+[10:27:40] [Server thread/INFO]: [ColorfulChat] Loading server plugin ColorfulChat v1.0.1-SNAPSHOT
+[10:27:40] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[10:27:40] [Server thread/INFO]: Preparing level "world"
+[10:27:40] [Server thread/ERROR]: No key layers in MapLike[{}]
+[10:27:42] [Server thread/ERROR]: No key layers in MapLike[{}]
+[10:27:42] [Server thread/ERROR]: No key layers in MapLike[{}]
+[10:27:43] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[10:27:43] [Server thread/INFO]: Preparing spawn area: 0%
+[10:27:43] [Server thread/INFO]: Time elapsed: 221 ms
+[10:27:43] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[10:27:43] [Server thread/INFO]: Preparing spawn area: 2%
+[10:27:43] [Server thread/INFO]: Time elapsed: 407 ms
+[10:27:43] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[10:27:43] [Server thread/INFO]: Preparing spawn area: 2%
+[10:27:43] [Server thread/INFO]: Time elapsed: 187 ms
+[10:27:43] [Server thread/INFO]: [Essentials] Enabling Essentials v2.21.2
+[10:27:44] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
+[10:27:44] [Server thread/INFO]: [Essentials] No kits found to migrate.
+[10:27:44] [Server thread/INFO]: [Essentials] Selected Legacy Biome Name Provider as the provider for BiomeNameProvider
+[10:27:44] [Server thread/INFO]: [Essentials] Selected 1.12+ Spawner Block Provider as the provider for SpawnerBlockProvider
+[10:27:44] [Server thread/INFO]: [Essentials] Selected 1.14+ Sign Data Provider as the provider for SignDataProvider
+[10:27:44] [Server thread/INFO]: [Essentials] Selected Paper Tick Count Provider as the provider for TickCountProvider
+[10:27:44] [Server thread/INFO]: [Essentials] Selected 1.21.4+ Sync Commands Provider as the provider for SyncCommandsProvider
+[10:27:44] [Server thread/INFO]: [Essentials] Selected Paper Serialization Provider as the provider for SerializationProvider
+[10:27:44] [Server thread/INFO]: [Essentials] Selected 1.20.4+ Damage Event Provider as the provider for DamageEventProvider
+[10:27:44] [Server thread/INFO]: [Essentials] Selected Reflection Online Mode Provider as the provider for OnlineModeProvider
+[10:27:44] [Server thread/INFO]: [Essentials] Selected Paper Material Tag Provider as the provider for MaterialTagProvider
+[10:27:44] [Server thread/INFO]: [Essentials] Selected 1.11+ Item Unbreakable Provider as the provider for ItemUnbreakableProvider
+[10:27:44] [Server thread/INFO]: [Essentials] Selected Paper Container Provider as the provider for ContainerProvider
+[10:27:44] [Server thread/INFO]: [Essentials] Selected 1.13+ Spawn Egg Provider as the provider for SpawnEggProvider
+[10:27:44] [Server thread/INFO]: [Essentials] Selected 1.17.1+ World Info Provider as the provider for WorldInfoProvider
+[10:27:44] [Server thread/INFO]: [Essentials] Selected Paper Known Commands Provider as the provider for KnownCommandsProvider
+[10:27:44] [Server thread/INFO]: [Essentials] Selected 1.21+ InventoryView Interface ABI Provider as the provider for InventoryViewProvider
+[10:27:44] [Server thread/INFO]: [Essentials] Selected Reflection Formatted Command Alias Provider as the provider for FormattedCommandAliasProvider
+[10:27:44] [Server thread/INFO]: [Essentials] Selected Paper Server State Provider as the provider for ServerStateProvider
+[10:27:44] [Server thread/INFO]: [Essentials] Selected 1.20.5+ Banner Data Provider as the provider for BannerDataProvider
+[10:27:44] [Server thread/INFO]: [Essentials] Selected 1.8.3+ Spawner Item Provider as the provider for SpawnerItemProvider
+[10:27:44] [Server thread/INFO]: [Essentials] Selected 1.14.4+ Persistent Data Container Provider as the provider for PersistentDataProvider
+[10:27:44] [Server thread/INFO]: [Essentials] Selected Paper Biome Key Provider as the provider for BiomeKeyProvider
+[10:27:44] [Server thread/INFO]: [Essentials] Selected 1.12.2+ Player Locale Provider as the provider for PlayerLocaleProvider
+[10:27:44] [Server thread/INFO]: [Essentials] Selected 1.20.6+ Potion Meta Provider as the provider for PotionMetaProvider
+[10:27:44] [Server thread/INFO]: [Essentials] Loaded 43880 items from items.json.
+[10:27:44] [Server thread/INFO]: [Essentials] Using locale zh_CN
+[10:27:44] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
+[10:27:44] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
+[10:27:44] [Server thread/INFO]: [Essentials] Using superperms-based permissions.
+[10:27:44] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.9.1
+[10:27:44] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.21.7-1.21.8 (772)
+[10:27:44] [Server thread/INFO]: [EssentialsChat] Enabling EssentialsChat v2.21.2
+[10:27:44] [Server thread/INFO]: [EssentialsChat] Starting Metrics. Opt-out using the global bStats config.
+[10:27:44] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.9.1
+[10:27:44] [Server thread/INFO]: [SuperColourfulChat] Enabling SuperColourfulChat v1.0.0
+[10:27:44] [Server thread/INFO]: [SuperColourfulChat] /scc command owner at enable: SuperColourfulChat
+[10:27:44] [Server thread/INFO]: [SuperColourfulChat] Modern AsyncChatEvent gradient hook registered.
+[10:27:44] [Server thread/INFO]: [SuperColourfulChat] Essentials private message gradient hook registered.
+[10:27:44] [Server thread/INFO]: [SuperColourfulChat] ViaVersion bridge active (clients below 1.16 receive legacy single color).
+[10:27:44] [Server thread/INFO]: [ColorfulChat] Enabling ColorfulChat v1.0.1-SNAPSHOT*
+[10:27:44] [Server thread/INFO]: [ColorfulChat] Using GradientRgbGeneratePolicy
+[10:27:45] [Server thread/INFO]: [spark] Starting background profiler...
+[10:27:45] [Server thread/INFO]: [spark] The async-profiler engine is not supported for your os/arch (windows11/amd64), so the built-in Java engine will be used instead.
+[10:27:45] [Server thread/INFO]: Done preparing level "world" (4.226s)
+[10:27:45] [Server thread/INFO]: Running delayed init tasks
+[10:27:45] [Server thread/INFO]: [SuperColourfulChat] /scc command owner at enable: SuperColourfulChat
+[10:27:45] [Server thread/INFO]: Done (21.596s)! For help, type "help"
+[10:27:45] [Craft Scheduler Thread - 3 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
+[10:27:45] [Craft Scheduler Thread - 2 - Essentials/INFO]: [Essentials] 正在获取版本信息...
+[10:27:45] [Server thread/WARN]: [ViaVersion] There is a newer plugin version available: 5.12.2, you're on: 5.9.1
+[10:27:46] [Craft Scheduler Thread - 2 - Essentials/WARN]: [Essentials] 已有新的EssentialsX版本可供下载：2.22.0。
+[10:27:46] [Craft Scheduler Thread - 2 - Essentials/WARN]: [Essentials] 在此处下载：https://essentialsx.net/downloads.html?branch=stable
+[10:27:49] [User Authenticator #0/INFO]: UUID of player TestBot is 30fecbe1-2271-3418-8553-d3ded0e95f56
+[10:27:49] [Server thread/INFO]: [HorriblePlayerLoginEventHack] You have plugins listening to the PlayerLoginEvent, this will cause re-configuration APIs to be unavailable: [Essentials]
+[10:27:49] [Server thread/INFO]: TestBot joined the game
+[10:27:49] [Server thread/INFO]: TestBot[/127.0.0.1:49191] logged in with entity id 51 at ([world]7.5, -61.0, -0.5)
+[10:27:51] [Server thread/INFO]: TestBot issued server command: /colorfulchat
+[10:27:53] [Server thread/INFO]: TestBot issued server command: /scc
+[10:27:53] [Server thread/INFO]: [SuperColourfulChat] TestBot (30fecbe1-2271-3418-8553-d3ded0e95f56) toggled ON via /scc
+[10:27:54] [Async Chat Thread - #0/INFO]: [SuperColourfulChat][debug] TestBot: HIGH injected gradient start=#c9e7a5 end=#5085fe text=hello gradient 12345
+[10:27:54] [Async Chat Thread - #0/INFO]: [SuperColourfulChat] First gradient injected for TestBot via modern AsyncChatEvent.
+[10:27:54] [Async Chat Thread - #0/INFO]: <TestBot> hello gradient 12345
+[10:27:56] [Async Chat Thread - #0/INFO]: [SuperColourfulChat][debug] TestBot: HIGH injected gradient start=#5965df end=#345707 text=second message abc
+[10:27:56] [Async Chat Thread - #0/INFO]: <TestBot> second message abc
+[10:27:59] [Server thread/INFO]: TestBot lost connection: Disconnected
+[10:27:59] [Server thread/INFO]: TestBot left the game

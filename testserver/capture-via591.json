@@ -1,0 +1,1929 @@
+[
+  {
+    "t": 1794534660118,
+    "kind": "system_chat",
+    "data": {
+      "content": {
+        "type": "compound",
+        "value": {
+          "extra": {
+            "type": "list",
+            "value": {
+              "type": "compound",
+              "value": [
+                {
+                  "italic": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "color": {
+                    "type": "string",
+                    "value": "gold"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "Welcome, "
+                  }
+                },
+                {
+                  "italic": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "color": {
+                    "type": "string",
+                    "value": "dark_red"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "TestBot"
+                  }
+                },
+                {
+                  "italic": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "color": {
+                    "type": "string",
+                    "value": "gold"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "!"
+                  }
+                }
+              ]
+            }
+          },
+          "text": {
+            "type": "string",
+            "value": ""
+          }
+        }
+      },
+      "isActionBar": false
+    }
+  },
+  {
+    "t": 1794534660118,
+    "kind": "system_chat",
+    "data": {
+      "content": {
+        "type": "compound",
+        "value": {
+          "extra": {
+            "type": "list",
+            "value": {
+              "type": "compound",
+              "value": [
+                {
+                  "italic": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "color": {
+                    "type": "string",
+                    "value": "gold"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "Type "
+                  }
+                },
+                {
+                  "italic": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "color": {
+                    "type": "string",
+                    "value": "red"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "/help"
+                  }
+                },
+                {
+                  "italic": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "color": {
+                    "type": "string",
+                    "value": "gold"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": " for a list of commands."
+                  }
+                }
+              ]
+            }
+          },
+          "text": {
+            "type": "string",
+            "value": ""
+          }
+        }
+      },
+      "isActionBar": false
+    }
+  },
+  {
+    "t": 1794534660118,
+    "kind": "system_chat",
+    "data": {
+      "content": {
+        "type": "compound",
+        "value": {
+          "extra": {
+            "type": "list",
+            "value": {
+              "type": "compound",
+              "value": [
+                {
+                  "italic": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "color": {
+                    "type": "string",
+                    "value": "gold"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "Type "
+                  }
+                },
+                {
+                  "italic": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "color": {
+                    "type": "string",
+                    "value": "red"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "/list"
+                  }
+                },
+                {
+                  "italic": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "color": {
+                    "type": "string",
+                    "value": "gold"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": " to see who else is online."
+                  }
+                }
+              ]
+            }
+          },
+          "text": {
+            "type": "string",
+            "value": ""
+          }
+        }
+      },
+      "isActionBar": false
+    }
+  },
+  {
+    "t": 1794534660118,
+    "kind": "system_chat",
+    "data": {
+      "content": {
+        "type": "compound",
+        "value": {
+          "extra": {
+            "type": "list",
+            "value": {
+              "type": "compound",
+              "value": [
+                {
+                  "italic": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "color": {
+                    "type": "string",
+                    "value": "gold"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "Players online:"
+                  }
+                },
+                {
+                  "italic": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "color": {
+                    "type": "string",
+                    "value": "red"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": " 1 "
+                  }
+                },
+                {
+                  "italic": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "color": {
+                    "type": "string",
+                    "value": "gold"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "- World time:"
+                  }
+                },
+                {
+                  "italic": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "color": {
+                    "type": "string",
+                    "value": "red"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": " 6:02 AM"
+                  }
+                }
+              ]
+            }
+          },
+          "text": {
+            "type": "string",
+            "value": ""
+          }
+        }
+      },
+      "isActionBar": false
+    }
+  },
+  {
+    "t": 1794534660118,
+    "kind": "system_chat",
+    "data": {
+      "content": {
+        "type": "compound",
+        "value": {
+          "color": {
+            "type": "string",
+            "value": "gold"
+          },
+          "text": {
+            "type": "string",
+            "value": "你没有新的邮件。"
+          }
+        }
+      },
+      "isActionBar": false
+    }
+  },
+  {
+    "t": 1794534660118,
+    "kind": "system_chat",
+    "data": {
+      "content": {
+        "type": "compound",
+        "value": {
+          "color": {
+            "type": "string",
+            "value": "gold"
+          },
+          "extra": {
+            "type": "list",
+            "value": {
+              "type": "compound",
+              "value": [
+                {
+                  "color": {
+                    "type": "string",
+                    "value": "dark_red"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "TestBot"
+                  }
+                },
+                {
+                  "extra": {
+                    "type": "list",
+                    "value": {
+                      "type": "compound",
+                      "value": [
+                        {
+                          "color": {
+                            "type": "string",
+                            "value": "red"
+                          },
+                          "extra": {
+                            "type": "list",
+                            "value": {
+                              "type": "compound",
+                              "value": [
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "gold"
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": "。"
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          "text": {
+                            "type": "string",
+                            "value": "开启"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "的飞行模式被设置为"
+                  }
+                }
+              ]
+            }
+          },
+          "text": {
+            "type": "string",
+            "value": ""
+          }
+        }
+      },
+      "isActionBar": false
+    }
+  },
+  {
+    "t": 1794534660119,
+    "kind": "system_chat",
+    "data": {
+      "content": {
+        "type": "compound",
+        "value": {
+          "extra": {
+            "type": "list",
+            "value": {
+              "type": "compound",
+              "value": [
+                {
+                  "italic": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "underlined": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "bold": {
+                    "type": "byte",
+                    "value": 1
+                  },
+                  "color": {
+                    "type": "string",
+                    "value": "green"
+                  },
+                  "obfuscated": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "strikethrough": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "[ViaVersion] "
+                  }
+                },
+                {
+                  "italic": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "bold": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "color": {
+                    "type": "string",
+                    "value": "green"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "There is a newer plugin version available: 5.12.2, you're on: 5.9.1"
+                  }
+                }
+              ]
+            }
+          },
+          "text": {
+            "type": "string",
+            "value": ""
+          }
+        }
+      },
+      "isActionBar": false
+    }
+  },
+  {
+    "t": 1794534660122,
+    "kind": "system_chat",
+    "data": {
+      "content": {
+        "type": "compound",
+        "value": {
+          "color": {
+            "type": "string",
+            "value": "dark_red"
+          },
+          "extra": {
+            "type": "list",
+            "value": {
+              "type": "compound",
+              "value": [
+                {
+                  "color": {
+                    "type": "string",
+                    "value": "red"
+                  },
+                  "extra": {
+                    "type": "list",
+                    "value": {
+                      "type": "compound",
+                      "value": [
+                        {
+                          "color": {
+                            "type": "string",
+                            "value": "dark_red"
+                          },
+                          "text": {
+                            "type": "string",
+                            "value": "。"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "2.22.0"
+                  }
+                }
+              ]
+            }
+          },
+          "text": {
+            "type": "string",
+            "value": "已有新的EssentialsX版本可供下载："
+          }
+        }
+      },
+      "isActionBar": false
+    }
+  },
+  {
+    "t": 1794534660127,
+    "kind": "system_chat",
+    "data": {
+      "content": {
+        "type": "compound",
+        "value": {
+          "color": {
+            "type": "string",
+            "value": "dark_red"
+          },
+          "extra": {
+            "type": "list",
+            "value": {
+              "type": "compound",
+              "value": [
+                {
+                  "color": {
+                    "type": "string",
+                    "value": "red"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "https://essentialsx.net/downloads.html?branch=stable"
+                  },
+                  "clickEvent": {
+                    "type": "compound",
+                    "value": {
+                      "action": {
+                        "type": "string",
+                        "value": "open_url"
+                      },
+                      "url": {
+                        "type": "string",
+                        "value": "https://essentialsx.net/downloads.html?branch=stable"
+                      },
+                      "value": {
+                        "type": "string",
+                        "value": "https://essentialsx.net/downloads.html?branch=stable"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "text": {
+            "type": "string",
+            "value": "在此处下载："
+          }
+        }
+      },
+      "isActionBar": false
+    }
+  },
+  {
+    "t": 1794534661931,
+    "kind": "system_chat",
+    "data": {
+      "content": {
+        "type": "compound",
+        "value": {
+          "extra": {
+            "type": "list",
+            "value": {
+              "type": "compound",
+              "value": [
+                {
+                  "italic": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "underlined": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "bold": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "color": {
+                    "type": "string",
+                    "value": "green"
+                  },
+                  "obfuscated": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "strikethrough": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "炫彩聊天已开启，你发送的消息将使用随机渐变色。"
+                  }
+                }
+              ]
+            }
+          },
+          "text": {
+            "type": "string",
+            "value": ""
+          }
+        }
+      },
+      "isActionBar": false
+    }
+  },
+  {
+    "t": 1794534663454,
+    "kind": "system_chat",
+    "data": {
+      "content": {
+        "type": "compound",
+        "value": {
+          "with": {
+            "type": "list",
+            "value": {
+              "type": "compound",
+              "value": [
+                {
+                  "extra": {
+                    "type": "list",
+                    "value": {
+                      "type": "compound",
+                      "value": [
+                        {
+                          "extra": {
+                            "type": "list",
+                            "value": {
+                              "type": "compound",
+                              "value": [
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "dark_red"
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": "TestBot"
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          "text": {
+                            "type": "string",
+                            "value": ""
+                          }
+                        },
+                        {
+                          "": {
+                            "type": "string",
+                            "value": "> "
+                          }
+                        },
+                        {
+                          "extra": {
+                            "type": "list",
+                            "value": {
+                              "type": "compound",
+                              "value": [
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "#5E37E7"
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": "h"
+                                  }
+                                },
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "#6441E8"
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": "e"
+                                  }
+                                },
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "#6A4AE9"
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": "l"
+                                  }
+                                },
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "#7154EA"
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": "l"
+                                  }
+                                },
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "#775EEB"
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": "o"
+                                  }
+                                },
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "#7D67EC"
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": " "
+                                  }
+                                },
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "#8371ED"
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": "g"
+                                  }
+                                },
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "#897BEE"
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": "r"
+                                  }
+                                },
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "#9084EF"
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": "a"
+                                  }
+                                },
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "#968EF0"
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": "d"
+                                  }
+                                },
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "#9C98F2"
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": "i"
+                                  }
+                                },
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "#A2A2F3"
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": "e"
+                                  }
+                                },
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "#A9ABF4"
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": "n"
+                                  }
+                                },
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "#AFB5F5"
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": "t"
+                                  }
+                                },
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "#B5BFF6"
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": " "
+                                  }
+                                },
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "#BBC8F7"
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": "1"
+                                  }
+                                },
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "#C1D2F8"
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": "2"
+                                  }
+                                },
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "#C8DCF9"
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": "3"
+                                  }
+                                },
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "#CEE5FA"
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": "4"
+                                  }
+                                },
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "#D4EFFB"
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": "5"
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          "text": {
+                            "type": "string",
+                            "value": ""
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "<"
+                  }
+                }
+              ]
+            }
+          },
+          "translate": {
+            "type": "string",
+            "value": "%s"
+          }
+        }
+      },
+      "isActionBar": false
+    }
+  },
+  {
+    "t": 1794534665442,
+    "kind": "system_chat",
+    "data": {
+      "content": {
+        "type": "compound",
+        "value": {
+          "with": {
+            "type": "list",
+            "value": {
+              "type": "compound",
+              "value": [
+                {
+                  "extra": {
+                    "type": "list",
+                    "value": {
+                      "type": "compound",
+                      "value": [
+                        {
+                          "extra": {
+                            "type": "list",
+                            "value": {
+                              "type": "compound",
+                              "value": [
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "dark_red"
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": "TestBot"
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          "text": {
+                            "type": "string",
+                            "value": ""
+                          }
+                        },
+                        {
+                          "": {
+                            "type": "string",
+                            "value": "> "
+                          }
+                        },
+                        {
+                          "color": {
+                            "type": "string",
+                            "value": "green"
+                          },
+                          "text": {
+                            "type": "string",
+                            "value": " manual green test"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "<"
+                  }
+                }
+              ]
+            }
+          },
+          "translate": {
+            "type": "string",
+            "value": "%s"
+          }
+        }
+      },
+      "isActionBar": false
+    }
+  },
+  {
+    "t": 1794534667458,
+    "kind": "system_chat",
+    "data": {
+      "content": {
+        "type": "compound",
+        "value": {
+          "extra": {
+            "type": "list",
+            "value": {
+              "type": "compound",
+              "value": [
+                {
+                  "color": {
+                    "type": "string",
+                    "value": "gold"
+                  },
+                  "extra": {
+                    "type": "list",
+                    "value": {
+                      "type": "compound",
+                      "value": [
+                        {
+                          "color": {
+                            "type": "string",
+                            "value": "red"
+                          },
+                          "extra": {
+                            "type": "list",
+                            "value": {
+                              "type": "compound",
+                              "value": [
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "dark_red"
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": "TestBot"
+                                  }
+                                },
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "gold"
+                                  },
+                                  "extra": {
+                                    "type": "list",
+                                    "value": {
+                                      "type": "compound",
+                                      "value": [
+                                        {
+                                          "color": {
+                                            "type": "string",
+                                            "value": "red"
+                                          },
+                                          "extra": {
+                                            "type": "list",
+                                            "value": {
+                                              "type": "compound",
+                                              "value": [
+                                                {
+                                                  "color": {
+                                                    "type": "string",
+                                                    "value": "gold"
+                                                  },
+                                                  "text": {
+                                                    "type": "string",
+                                                    "value": "] "
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "text": {
+                                            "type": "string",
+                                            "value": "我"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": " -> "
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          "text": {
+                            "type": "string",
+                            "value": ""
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "["
+                  }
+                },
+                {
+                  "color": {
+                    "type": "string",
+                    "value": "#CFB528"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "p"
+                  }
+                },
+                {
+                  "color": {
+                    "type": "string",
+                    "value": "#C7AB30"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "m"
+                  }
+                },
+                {
+                  "color": {
+                    "type": "string",
+                    "value": "#BFA138"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": " "
+                  }
+                },
+                {
+                  "color": {
+                    "type": "string",
+                    "value": "#B6973F"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "g"
+                  }
+                },
+                {
+                  "color": {
+                    "type": "string",
+                    "value": "#AE8E47"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "r"
+                  }
+                },
+                {
+                  "color": {
+                    "type": "string",
+                    "value": "#A6844F"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "a"
+                  }
+                },
+                {
+                  "color": {
+                    "type": "string",
+                    "value": "#9E7A57"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "d"
+                  }
+                },
+                {
+                  "color": {
+                    "type": "string",
+                    "value": "#95705F"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "i"
+                  }
+                },
+                {
+                  "color": {
+                    "type": "string",
+                    "value": "#8D6667"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "e"
+                  }
+                },
+                {
+                  "color": {
+                    "type": "string",
+                    "value": "#855C6E"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "n"
+                  }
+                },
+                {
+                  "color": {
+                    "type": "string",
+                    "value": "#7D5276"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "t"
+                  }
+                },
+                {
+                  "color": {
+                    "type": "string",
+                    "value": "#74487E"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": " "
+                  }
+                },
+                {
+                  "color": {
+                    "type": "string",
+                    "value": "#6C3F86"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "c"
+                  }
+                },
+                {
+                  "color": {
+                    "type": "string",
+                    "value": "#64358E"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "h"
+                  }
+                },
+                {
+                  "color": {
+                    "type": "string",
+                    "value": "#5C2B95"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "e"
+                  }
+                },
+                {
+                  "color": {
+                    "type": "string",
+                    "value": "#53219D"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "c"
+                  }
+                },
+                {
+                  "color": {
+                    "type": "string",
+                    "value": "#4B17A5"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "k"
+                  }
+                }
+              ]
+            }
+          },
+          "text": {
+            "type": "string",
+            "value": ""
+          }
+        }
+      },
+      "isActionBar": false
+    }
+  },
+  {
+    "t": 1794534667460,
+    "kind": "system_chat",
+    "data": {
+      "content": {
+        "type": "compound",
+        "value": {
+          "extra": {
+            "type": "list",
+            "value": {
+              "type": "compound",
+              "value": [
+                {
+                  "color": {
+                    "type": "string",
+                    "value": "gold"
+                  },
+                  "extra": {
+                    "type": "list",
+                    "value": {
+                      "type": "compound",
+                      "value": [
+                        {
+                          "color": {
+                            "type": "string",
+                            "value": "red"
+                          },
+                          "extra": {
+                            "type": "list",
+                            "value": {
+                              "type": "compound",
+                              "value": [
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "gold"
+                                  },
+                                  "extra": {
+                                    "type": "list",
+                                    "value": {
+                                      "type": "compound",
+                                      "value": [
+                                        {
+                                          "color": {
+                                            "type": "string",
+                                            "value": "red"
+                                          },
+                                          "extra": {
+                                            "type": "list",
+                                            "value": {
+                                              "type": "compound",
+                                              "value": [
+                                                {
+                                                  "color": {
+                                                    "type": "string",
+                                                    "value": "dark_red"
+                                                  },
+                                                  "text": {
+                                                    "type": "string",
+                                                    "value": "TestBot"
+                                                  }
+                                                },
+                                                {
+                                                  "color": {
+                                                    "type": "string",
+                                                    "value": "gold"
+                                                  },
+                                                  "text": {
+                                                    "type": "string",
+                                                    "value": "] "
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "text": {
+                                            "type": "string",
+                                            "value": ""
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": " -> "
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          "text": {
+                            "type": "string",
+                            "value": "我"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "["
+                  }
+                },
+                {
+                  "color": {
+                    "type": "string",
+                    "value": "#CFB528"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "p"
+                  }
+                },
+                {
+                  "color": {
+                    "type": "string",
+                    "value": "#C7AB30"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "m"
+                  }
+                },
+                {
+                  "color": {
+                    "type": "string",
+                    "value": "#BFA138"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": " "
+                  }
+                },
+                {
+                  "color": {
+                    "type": "string",
+                    "value": "#B6973F"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "g"
+                  }
+                },
+                {
+                  "color": {
+                    "type": "string",
+                    "value": "#AE8E47"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "r"
+                  }
+                },
+                {
+                  "color": {
+                    "type": "string",
+                    "value": "#A6844F"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "a"
+                  }
+                },
+                {
+                  "color": {
+                    "type": "string",
+                    "value": "#9E7A57"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "d"
+                  }
+                },
+                {
+                  "color": {
+                    "type": "string",
+                    "value": "#95705F"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "i"
+                  }
+                },
+                {
+                  "color": {
+                    "type": "string",
+                    "value": "#8D6667"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "e"
+                  }
+                },
+                {
+                  "color": {
+                    "type": "string",
+                    "value": "#855C6E"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "n"
+                  }
+                },
+                {
+                  "color": {
+                    "type": "string",
+                    "value": "#7D5276"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "t"
+                  }
+                },
+                {
+                  "color": {
+                    "type": "string",
+                    "value": "#74487E"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": " "
+                  }
+                },
+                {
+                  "color": {
+                    "type": "string",
+                    "value": "#6C3F86"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "c"
+                  }
+                },
+                {
+                  "color": {
+                    "type": "string",
+                    "value": "#64358E"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "h"
+                  }
+                },
+                {
+                  "color": {
+                    "type": "string",
+                    "value": "#5C2B95"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "e"
+                  }
+                },
+                {
+                  "color": {
+                    "type": "string",
+                    "value": "#53219D"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "c"
+                  }
+                },
+                {
+                  "color": {
+                    "type": "string",
+                    "value": "#4B17A5"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "k"
+                  }
+                }
+              ]
+            }
+          },
+          "text": {
+            "type": "string",
+            "value": ""
+          }
+        }
+      },
+      "isActionBar": false
+    }
+  },
+  {
+    "t": 1794534669465,
+    "kind": "system_chat",
+    "data": {
+      "content": {
+        "type": "compound",
+        "value": {
+          "extra": {
+            "type": "list",
+            "value": {
+              "type": "compound",
+              "value": [
+                {
+                  "color": {
+                    "type": "string",
+                    "value": "gold"
+                  },
+                  "extra": {
+                    "type": "list",
+                    "value": {
+                      "type": "compound",
+                      "value": [
+                        {
+                          "color": {
+                            "type": "string",
+                            "value": "red"
+                          },
+                          "extra": {
+                            "type": "list",
+                            "value": {
+                              "type": "compound",
+                              "value": [
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "dark_red"
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": "TestBot"
+                                  }
+                                },
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "gold"
+                                  },
+                                  "extra": {
+                                    "type": "list",
+                                    "value": {
+                                      "type": "compound",
+                                      "value": [
+                                        {
+                                          "color": {
+                                            "type": "string",
+                                            "value": "red"
+                                          },
+                                          "extra": {
+                                            "type": "list",
+                                            "value": {
+                                              "type": "compound",
+                                              "value": [
+                                                {
+                                                  "color": {
+                                                    "type": "string",
+                                                    "value": "gold"
+                                                  },
+                                                  "text": {
+                                                    "type": "string",
+                                                    "value": "] "
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "text": {
+                                            "type": "string",
+                                            "value": "我"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": " -> "
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          "text": {
+                            "type": "string",
+                            "value": ""
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "["
+                  }
+                },
+                {
+                  "color": {
+                    "type": "string",
+                    "value": "green"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": " pm manual"
+                  }
+                }
+              ]
+            }
+          },
+          "text": {
+            "type": "string",
+            "value": ""
+          }
+        }
+      },
+      "isActionBar": false
+    }
+  },
+  {
+    "t": 1794534669466,
+    "kind": "system_chat",
+    "data": {
+      "content": {
+        "type": "compound",
+        "value": {
+          "extra": {
+            "type": "list",
+            "value": {
+              "type": "compound",
+              "value": [
+                {
+                  "color": {
+                    "type": "string",
+                    "value": "gold"
+                  },
+                  "extra": {
+                    "type": "list",
+                    "value": {
+                      "type": "compound",
+                      "value": [
+                        {
+                          "color": {
+                            "type": "string",
+                            "value": "red"
+                          },
+                          "extra": {
+                            "type": "list",
+                            "value": {
+                              "type": "compound",
+                              "value": [
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "gold"
+                                  },
+                                  "extra": {
+                                    "type": "list",
+                                    "value": {
+                                      "type": "compound",
+                                      "value": [
+                                        {
+                                          "color": {
+                                            "type": "string",
+                                            "value": "red"
+                                          },
+                                          "extra": {
+                                            "type": "list",
+                                            "value": {
+                                              "type": "compound",
+                                              "value": [
+                                                {
+                                                  "color": {
+                                                    "type": "string",
+                                                    "value": "dark_red"
+                                                  },
+                                                  "text": {
+                                                    "type": "string",
+                                                    "value": "TestBot"
+                                                  }
+                                                },
+                                                {
+                                                  "color": {
+                                                    "type": "string",
+                                                    "value": "gold"
+                                                  },
+                                                  "text": {
+                                                    "type": "string",
+                                                    "value": "] "
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "text": {
+                                            "type": "string",
+                                            "value": ""
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": " -> "
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          "text": {
+                            "type": "string",
+                            "value": "我"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "["
+                  }
+                },
+                {
+                  "color": {
+                    "type": "string",
+                    "value": "green"
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": " pm manual"
+                  }
+                }
+              ]
+            }
+          },
+          "text": {
+            "type": "string",
+            "value": ""
+          }
+        }
+      },
+      "isActionBar": false
+    }
+  },
+  {
+    "t": 1794534671466,
+    "kind": "system_chat",
+    "data": {
+      "content": {
+        "type": "compound",
+        "value": {
+          "extra": {
+            "type": "list",
+            "value": {
+              "type": "compound",
+              "value": [
+                {
+                  "italic": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "underlined": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "bold": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "color": {
+                    "type": "string",
+                    "value": "gray"
+                  },
+                  "obfuscated": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "strikethrough": {
+                    "type": "byte",
+                    "value": 0
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "炫彩聊天已关闭。"
+                  }
+                }
+              ]
+            }
+          },
+          "text": {
+            "type": "string",
+            "value": ""
+          }
+        }
+      },
+      "isActionBar": false
+    }
+  },
+  {
+    "t": 1794534672977,
+    "kind": "system_chat",
+    "data": {
+      "content": {
+        "type": "compound",
+        "value": {
+          "with": {
+            "type": "list",
+            "value": {
+              "type": "compound",
+              "value": [
+                {
+                  "extra": {
+                    "type": "list",
+                    "value": {
+                      "type": "compound",
+                      "value": [
+                        {
+                          "extra": {
+                            "type": "list",
+                            "value": {
+                              "type": "compound",
+                              "value": [
+                                {
+                                  "color": {
+                                    "type": "string",
+                                    "value": "dark_red"
+                                  },
+                                  "text": {
+                                    "type": "string",
+                                    "value": "TestBot"
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          "text": {
+                            "type": "string",
+                            "value": ""
+                          }
+                        },
+                        {
+                          "": {
+                            "type": "string",
+                            "value": "> "
+                          }
+                        },
+                        {
+                          "": {
+                            "type": "string",
+                            "value": "plain after off"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "text": {
+                    "type": "string",
+                    "value": "<"
+                  }
+                }
+              ]
+            }
+          },
+          "translate": {
+            "type": "string",
+            "value": "%s"
+          }
+        }
+      },
+      "isActionBar": false
+    }
+  }
+]

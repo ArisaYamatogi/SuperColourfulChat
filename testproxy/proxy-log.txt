@@ -1,0 +1,37 @@
+Unbundling libraries to G:\SuperColourfulChat\testproxy\bundler\libraries
+Launching net.md_5.bungee.BungeeCordLauncher
+10:27:47 [[0;34;1m–≈œ¢[m] Using standard Java JCE cipher.
+[m10:27:47 [[0;34;1m–≈œ¢[m] Enabled BungeeCord version git:BungeeCord-Proxy:26.1-R0.1-SNAPSHOT:55e1b0b:2111
+[m10:27:47 [[0;34;1m–≈œ¢[m] Discovered module: ModuleSpec(name=cmd_alert, file=modules\cmd_alert.jar, provider=BootstrapModuleSource())
+[m10:27:47 [[0;34;1m–≈œ¢[m] Discovered module: ModuleSpec(name=cmd_find, file=modules\cmd_find.jar, provider=BootstrapModuleSource())
+[m10:27:47 [[0;34;1m–≈œ¢[m] Discovered module: ModuleSpec(name=cmd_list, file=modules\cmd_list.jar, provider=BootstrapModuleSource())
+[m10:27:47 [[0;34;1m–≈œ¢[m] Discovered module: ModuleSpec(name=cmd_send, file=modules\cmd_send.jar, provider=BootstrapModuleSource())
+[m10:27:47 [[0;34;1m–≈œ¢[m] Discovered module: ModuleSpec(name=cmd_server, file=modules\cmd_server.jar, provider=BootstrapModuleSource())
+[m10:27:47 [[0;34;1m–≈œ¢[m] Discovered module: ModuleSpec(name=reconnect_yaml, file=modules\reconnect_yaml.jar, provider=BootstrapModuleSource())
+[m10:27:47 [[0;34;1m–≈œ¢[m] Loaded plugin reconnect_yaml version git:reconnect_yaml:26.1-R0.1-SNAPSHOT:55e1b0b:2111 by SpigotMC
+[m10:27:47 [[0;34;1m–≈œ¢[m] Loaded plugin cmd_find version git:cmd_find:26.1-R0.1-SNAPSHOT:55e1b0b:2111 by SpigotMC
+[m10:27:47 [[0;34;1m–≈œ¢[m] [ViaVersion] Found ViaBackwards, loading it
+[m10:27:47 [[0;34;1m–≈œ¢[m] Loaded plugin ViaVersion version 0.4.0 by _MylesC, creeper123123321, Gerrygames, kennytv, Matsv, EnZaXD, RK_01
+[m10:27:47 [[0;34;1m–≈œ¢[m] Loaded plugin cmd_server version git:cmd_server:26.1-R0.1-SNAPSHOT:55e1b0b:2111 by SpigotMC
+[m10:27:47 [[0;34;1m–≈œ¢[m] Loaded plugin cmd_alert version git:cmd_alert:26.1-R0.1-SNAPSHOT:55e1b0b:2111 by SpigotMC
+[m10:27:47 [[0;34;1m–≈œ¢[m] Loaded plugin cmd_send version git:cmd_send:26.1-R0.1-SNAPSHOT:55e1b0b:2111 by SpigotMC
+[m10:27:47 [[0;34;1m–≈œ¢[m] Loaded plugin cmd_list version git:cmd_list:26.1-R0.1-SNAPSHOT:55e1b0b:2111 by SpigotMC
+[m10:27:47 [[0;34;1m–≈œ¢[m] Enabled plugin reconnect_yaml version git:reconnect_yaml:26.1-R0.1-SNAPSHOT:55e1b0b:2111 by SpigotMC
+[m10:27:47 [[0;34;1m–≈œ¢[m] Enabled plugin cmd_find version git:cmd_find:26.1-R0.1-SNAPSHOT:55e1b0b:2111 by SpigotMC
+[m10:27:47 [[0;34;1m–≈œ¢[m] [ViaVersion] Loading block connection mappings ...
+[m10:27:47 [[0;34;1m–≈œ¢[m] [ViaVersion] Successfully injected ViaVersion into BungeeCord!
+[m10:27:47 [[0;34;1m–≈œ¢[m] [ViaVersion] Loading translations...
+[m10:27:47 [[0;34;1m–≈œ¢[m] [ViaVersion] Registering protocols...
+[m10:27:48 [[0;34;1m–≈œ¢[m] [ViaVersion] Finished mapping loading, shutting down loader executor.
+[m10:27:48 [[0;34;1m–≈œ¢[m] Enabled plugin ViaVersion version 0.4.0 by _MylesC, creeper123123321, Gerrygames, kennytv, Matsv, EnZaXD, RK_01
+[m10:27:48 [[0;34;1m–≈œ¢[m] Enabled plugin cmd_server version git:cmd_server:26.1-R0.1-SNAPSHOT:55e1b0b:2111 by SpigotMC
+[m10:27:48 [[0;34;1m–≈œ¢[m] Enabled plugin cmd_alert version git:cmd_alert:26.1-R0.1-SNAPSHOT:55e1b0b:2111 by SpigotMC
+[m10:27:48 [[0;34;1m–≈œ¢[m] Enabled plugin cmd_send version git:cmd_send:26.1-R0.1-SNAPSHOT:55e1b0b:2111 by SpigotMC
+[m10:27:48 [[0;34;1m–≈œ¢[m] Enabled plugin cmd_list version git:cmd_list:26.1-R0.1-SNAPSHOT:55e1b0b:2111 by SpigotMC
+[m> 10:27:48 [[0;34;1m–≈œ¢[m] Listening on /0.0.0.0:25565
+[m>10:27:48 [[0;34;1m–≈œ¢[m] [/127.0.0.1:49190] <-> InitialHandler has connected
+[m10:27:48 [[0;34;1m–≈œ¢[m] [TestBot] <-> ServerConnector [lobby] has connected
+[m10:27:49 [[0;33;1mæØ∏Ê[m] [ViaVersion] There is a newer plugin version available: 5.12.2, you're on: 5.9.1
+[m10:27:59 [[0;34;1m–≈œ¢[m] [TestBot] -> UpstreamBridge has disconnected
+[m10:27:59 [[0;34;1m–≈œ¢[m] [TestBot] <-> DownstreamBridge <-> [lobby] has disconnected
+[m

@@ -26,6 +26,10 @@ public final class ModernChatListener implements Listener {
     private final java.util.concurrent.atomic.AtomicBoolean firstInjectionLogged = new java.util.concurrent.atomic.AtomicBoolean();
     private final Set<UUID> offSkipLogged = ConcurrentHashMap.newKeySet();
 
+    // 保留 §x hex 的序列化器：plain legacySection() 会把 hex 降级为最近 legacy 色，导致兜底检测误判。
+    private static final LegacyComponentSerializer HEX_SERIALIZER = LegacyComponentSerializer.builder()
+            .character('§').hexColors().useUnusualXRepeatedCharacterHexFormat().build();
+
     public ModernChatListener(SccCommand toggles, ViaVersionBridge via) {
         this.toggles = toggles;
         this.via = via;
@@ -39,7 +43,7 @@ public final class ModernChatListener implements Listener {
             return;
         }
         String text = GradientUtil.plainProjection(
-                GradientUtil.stripDanglingHex(LegacyComponentSerializer.legacySection().serialize(event.message())));
+                GradientUtil.stripDanglingHex(HEX_SERIALIZER.serialize(event.message())));
         toggles.markModernStarted(sender.getUniqueId(), text);
     }
 
@@ -58,22 +62,20 @@ public final class ModernChatListener implements Listener {
             return;
         }
         // 手动码以玩家原始输入为准：EssentialsChat LOWEST 会按权限剥掉§码，剥后检测会漏判。
-        String original = LegacyComponentSerializer.legacySection().serialize(event.originalMessage());
+        String original = HEX_SERIALIZER.serialize(event.originalMessage());
         if (GradientUtil.hasManualCodes(original)) {
             debug(sender, "HIGH skip: manual codes in original input: " + original);
             return;
         }
         // EssentialsChat 剥色会把 §x hex 序列剥成裸 §x 残留（'x' 不在其颜色表内），需清除以免客户端渲染异常。
-        String text = GradientUtil.stripDanglingHex(LegacyComponentSerializer.legacySection().serialize(event.message()));
+        String current = GradientUtil.stripDanglingHex(HEX_SERIALIZER.serialize(event.message()));
+        // 只取纯文本投影：覆盖其他插件（如 ColorfulChat）预置的颜色及其前置 §f，避免代理端泄漏成字面 "f"。
+        String text = GradientUtil.plainProjection(current);
         if (text.isEmpty()) {
             debug(sender, "HIGH skip: empty message after cleanup");
             return;
         }
-        // 消息已含完整 hex（例如 legacy 重分发兜底已注入）时不再叠加，避免对§码逐字符渐变产生乱码。
-        if (GradientUtil.containsHex(text)) {
-            debug(sender, "HIGH skip: message already contains hex colors");
-            return;
-        }
+        // 对纯文本渐变是幂等的：即便消息已被注入渐变，也不会对 §码逐字符渐变产生乱码，故无需 containsHex 跳过。
         int start = GradientUtil.randomColor();
         int end = GradientUtil.randomEndColor(start);
         String gradient = GradientUtil.gradient(text, start, end);
@@ -107,7 +109,7 @@ public final class ModernChatListener implements Listener {
         toggles.clearModernStarted(sender.getUniqueId());
         if (event.isCancelled()) {
             String cancelledText = GradientUtil.plainProjection(
-                    GradientUtil.stripDanglingHex(LegacyComponentSerializer.legacySection().serialize(event.message())));
+                    GradientUtil.stripDanglingHex(HEX_SERIALIZER.serialize(event.message())));
             toggles.markModernCancelled(sender.getUniqueId(), cancelledText);
             debug(sender, "AsyncChatEvent CANCELLED by another plugin; legacy re-dispatch fallback armed");
             return;
@@ -115,11 +117,11 @@ public final class ModernChatListener implements Listener {
         if (!toggles.isEnabled(sender.getUniqueId()) || !sender.hasPermission("scc.use")) {
             return;
         }
-        String original = LegacyComponentSerializer.legacySection().serialize(event.originalMessage());
+        String original = HEX_SERIALIZER.serialize(event.originalMessage());
         if (GradientUtil.hasManualCodes(original)) {
             return;
         }
-        String current = GradientUtil.stripDanglingHex(LegacyComponentSerializer.legacySection().serialize(event.message()));
+        String current = GradientUtil.stripDanglingHex(HEX_SERIALIZER.serialize(event.message()));
         String plain = GradientUtil.plainProjection(current);
         if (plain.isEmpty()) {
             return;
@@ -130,7 +132,7 @@ public final class ModernChatListener implements Listener {
         }
         ChatRenderer.ViewerUnaware viewerUnaware = (ChatRenderer.ViewerUnaware) renderer;
         Component renderedComponent = viewerUnaware.render(sender, sender.displayName(), event.message());
-        String rendered = LegacyComponentSerializer.legacySection().serialize(renderedComponent);
+        String rendered = HEX_SERIALIZER.serialize(renderedComponent);
         if (GradientUtil.renderedMessageHasHex(rendered, plain)) {
             return;
         }
